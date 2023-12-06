@@ -1,0 +1,334 @@
+/* Estilos de Fondo y Tipografía */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: 	#000010;
+ color: #fff;
+ font-family: 'Arial', sans-serif;
+  margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+  
+}
+
+
+/* Estilos del Header */
+.header-container {
+ 
+  
+  padding: 40px 20px 20px 40px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.header-top-gradient {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  background-color: initial;
+}
+.header-top-gradient {
+  display: none;
+}
+.header-top-gradient {
+  background: linear-gradient(#000,transparent);
+  opacity: .6;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  z-index: 1;
+  content: "";
+  position: absolute;
+}
+.content {
+  position: absolute;
+  top: 400px; /* Ajusta la distancia desde la parte superior */
+  left: 50px; /* Ajusta la distancia desde la izquierda */
+ 
+}
+.banner-title {
+   font-size: 35px;
+}
+.discount {
+  
+background-color: #cc4300;
+color: rgb(232, 230, 227);
+
+}
+.number .discount {
+  margin-top: 20px; /* Ajusta la distancia desde arriba según sea necesario */
+}
+
+
+
+
+
+.header h1 {
+  font-size: 1.5em; /* Ajusta el tamaño del texto */
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1em;
+}
+.menu.container {
+  margin: 0; /* Asegura que no haya márgenes */
+  padding: 0; /* Asegura que no haya padding */
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    padding: 20px;
+  }
+}
+
+
+/* Estilos de la Barra de Navegación */
+.navbar {
+  background-color: #181a1b;
+ padding: 5px 10px ; /* Añadimos espacio interno para los elementos de la navbar */ 
+  position: absolute; /* Fija la barra de navegación en la parte superior de la pantalla */
+  top: 0; /* Asegura que esté pegada a la parte superior */
+  left: 0;
+  width: 100%;
+  
+  }
+
+.navbar ul {
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px; /* Ajustamos el tamaño del texto */
+  transition: color 0.3s; /* Añadimos una transición para el cambio de color al pasar el cursor */
+}
+
+.navbar .home a:hover,
+.navbar .categories a:hover,
+.navbar .about-us a:hover {
+  color:  #ff5722; /* Cambiamos el color al pasar el cursor */
+}
+
+
+/* Estilos de la Barra de Búsqueda */
+
+
+
+@media only screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2em;
+  }
+}
+
+.material-icons {
+  background-color: #ff5722; /* Cambia el fondo del icono */
+  padding: 5px; /* Añade un poco de espacio alrededor del icono */
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  
+}
+.navbar .carrito i.material-icons  {
+  font-size: 24px;
+ 
+}
+ 
+.navbar .login i.material-icons {
+  font-size: 24px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 1em; /* Ajusta el tamaño del texto */
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px; /* Reducimos el padding para dejar más espacio al círculo */
+  width: 50px; /* Aumentamos el ancho del botón */
+  height: 50px; /* Aumentamos la altura del botón */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1em;
+  background: linear-gradient(to bottom, #ff5722, #d42d03);
+}
+
+
+.search-bar button:hover {
+  background-color: #e64a19; }
+
+
+
+.search-bar input[type="text"]::placeholder {
+  color: #999;
+}
+#search-results {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.1); /* Ajusta el valor de la opacidad según tus preferencias */
+  backdrop-filter: blur(10px); /* Agrega un efecto de desenfoque al fondo */
+  
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search-bar input[type="text"] {
+  width: calc(100% - 40px); /* Resta el espacio para el botón de búsqueda */
+}
+
+.search-bar button {
+  width: 40px; /* Ajusta el ancho del botón según sea necesario */
+}
+
+#search-results .search-result-item {
+  color: #e64a19; /* Cambia el color del texto según tus preferencias */
+}
+
+
+
+
+.fondo img {
+  background-size: cover;
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto;
+ right: 0;
+ margin-bottom: 50px;
+}
+ 
+ h2 a{
+  margin-top: 20px; /* Ajusta el valor según lo que necesites */
+  margin-left: 70px;
+  color: #ff5722;
+  margin-bottom: 30px;
+}
+h2.best-seller a{
+  color: #FF5733; /* Cambia el color según tus preferencias */
+  margin-bottom: 10px; /* Ajusta el margen según tus preferencias */
+  margin-bottom: 60px;
+}
+
+
+
+ .product-container {
+  font-family: Arial, sans-serif;
+}
+
+.listing-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+  width: 100%;
+}
+
+.item {
+  flex: 0 0 calc(33.33% - 20px);
+  box-sizing: border-box;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #ffffff;
+  
+  margin-left: 40px;
+}
+.banner-title-fifa {
+  position: relative;
+  font-size: 12px;
+  margin-left: 100px;
+  
+}
+
+
+
+/* Estilos del Footer */
+.footer-container {
+  background-color: #333; /* Cambia el color de fondo según tu preferencia */
+  color: #fff; /* Color del texto */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.redes-sociales a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+  color: #ff5722; /* Cambia el color de hover según tu preferencia */
+}
+
+.derechos-de-autor {
+  margin-top: 10px;
+}
+ /* ... Otros estilos ... */
+
+.footer .footer-home a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .support a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .politicas a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .terminos a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer li a:hover {
+  color: #ff5722;
+}
